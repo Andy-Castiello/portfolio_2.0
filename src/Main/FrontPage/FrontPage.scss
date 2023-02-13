@@ -1,8 +1,8 @@
 @import '../../variables.scss';
 
 .front-page {
-	background-size: cover;
 	background-attachment: fixed;
+
 	&__cover {
 		min-width: 100%;
 		min-height: 100vh;
@@ -11,6 +11,7 @@
 		flex-direction: column;
 		justify-content: center;
 		gap: 2rem;
+		padding: 10rem 0;
 		padding-left: 10rem;
 		font-size: 5rem;
 		font-family: neon;
