@@ -1,0 +1,134 @@
+{
+    "certificates": [
+        {
+            "title": "Desarrollo Web",
+            "institution": "CoderHouse",
+            "date": "Ago 2021 - Oct 2021",
+            "link": "https://www.coderhouse.com/certificados/618c72fc697651002edbbb5d"
+        },
+        {
+            "title": "JavaScript",
+            "institution": "CoderHouse",
+            "date": "Dic 2021 - Feb 2022",
+            "link": "https://www.coderhouse.com/certificados/622c19bdf0727901f418dfcd"
+        },
+        {
+            "title": "Responsive Web Design",
+            "institution": "FreeCodeCamp",
+            "date": "Ene 2021",
+            "link": "https://www.freecodecamp.org/certification/andy-96/responsive-web-design"
+        },
+        {
+            "title": "JavaScript Algorithms and Data Structures",
+            "institution": "FreeCodeCamp",
+            "date": "Feb 2021",
+            "link": "https://www.freecodecamp.org/certification/andy-96/javascript-algorithms-and-data-structures"
+        },
+        {
+            "title": "Desarrollo Web",
+            "institution": "CoderHouse",
+            "date": "Ago 2021 - Oct 2021",
+            "link": "https://www.coderhouse.com/certificados/618c72fc697651002edbbb5d"
+        },
+        {
+            "title": "JavaScript",
+            "institution": "CoderHouse",
+            "date": "Dic 2021 - Feb 2022",
+            "link": "https://www.coderhouse.com/certificados/622c19bdf0727901f418dfcd"
+        },
+        {
+            "title": "Responsive Web Design",
+            "institution": "FreeCodeCamp",
+            "date": "Ene 2021",
+            "link": "https://www.freecodecamp.org/certification/andy-96/responsive-web-design"
+        },
+        {
+            "title": "JavaScript Algorithms and Data Structures",
+            "institution": "FreeCodeCamp",
+            "date": "Feb 2021",
+            "link": "https://www.freecodecamp.org/certification/andy-96/javascript-algorithms-and-data-structures"
+        },
+        {
+            "title": "Desarrollo Web",
+            "institution": "CoderHouse",
+            "date": "Ago 2021 - Oct 2021",
+            "link": "https://www.coderhouse.com/certificados/618c72fc697651002edbbb5d"
+        },
+        {
+            "title": "JavaScript",
+            "institution": "CoderHouse",
+            "date": "Dic 2021 - Feb 2022",
+            "link": "https://www.coderhouse.com/certificados/622c19bdf0727901f418dfcd"
+        },
+        {
+            "title": "Responsive Web Design",
+            "institution": "FreeCodeCamp",
+            "date": "Ene 2021",
+            "link": "https://www.freecodecamp.org/certification/andy-96/responsive-web-design"
+        },
+        {
+            "title": "JavaScript Algorithms and Data Structures",
+            "institution": "FreeCodeCamp",
+            "date": "Feb 2021",
+            "link": "https://www.freecodecamp.org/certification/andy-96/javascript-algorithms-and-data-structures"
+        }
+    ],
+    "skills": [
+        {
+            "title": "HTML",
+            "level": 80
+        },
+        {
+            "title": "CSS",
+            "level": 80
+        },
+        {
+            "title": "JavaScript",
+            "level": 80
+        },
+        {
+            "title": "React",
+            "level": 70
+        },
+        {
+            "title": "Python",
+            "level": 60
+        },
+        {
+            "title": "Java",
+            "level": 50
+        },
+        {
+            "title": "Django",
+            "level": 60
+        },
+        {
+            "title": "Visual Basic",
+            "level": 30
+        },
+        {
+            "title": "Terminal Linux",
+            "level": 40
+        }
+    ],
+    "works": [
+        {
+            "title": "Dark Brewery",
+            "image": "./images/works/Cerveceria.jpeg",
+            "link": "https://andy-castiello.github.io/Cerveceria/",
+            "description": "Dark Brewery es un sitio realizado como proyecto final para el curso de Desarrollo Web, en la academia de CODERHOUSE."
+        },
+        {
+            "title": "Catalogo",
+            "image": "./images/works/Tienda-ropa.png",
+            "link": "https://andy-castiello.github.io/Tienda-Ropa/",
+            "description": "Al igual que Dark Brewery, este sitio fue el sitio que presente como proyecto final del curso de JavaScript también realizado en CODERHOUSE."
+        },
+        {
+            "title": "Zod-Sec",
+            "image": "./images/works/Zod-sec.png",
+            "link": "https://www.zod-sec.com/",
+            "description": "Zod-Sec es un sitio sobre criptomonedas. Este es un trabajo freelance que realice con un compañero para un cliente, en este, me encargue de programar la parte del backend utilizando el framework Django."
+        }
+    ]
+}

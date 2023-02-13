@@ -1,0 +1,46 @@
+@import '../../variables.scss';
+
+.front-page {
+	background-size: cover;
+	background-attachment: fixed;
+	&__cover {
+		min-width: 100%;
+		min-height: 100vh;
+		background-color: $image-darker;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 2rem;
+		padding-left: 10rem;
+		font-size: 5rem;
+		font-family: neon;
+	}
+	&__h1 {
+		color: $neon-light-1;
+		font-weight: 500;
+		text-shadow: 0 0 0.2em $neon-light-1, 0 0 0.2em $neon-light-1;
+	}
+	&__span {
+		color: $neon-light-2;
+		font-weight: 300;
+		font-size: 0.7em;
+		text-shadow: 0 0 0.17em $neon-light-2, 0 0 0.17em $neon-light-2;
+	}
+}
+@media only screen and (max-width: 1200px) {
+	.front-page__cover {
+		padding-left: 7rem;
+		font-size: 4rem;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.front-page__cover {
+		padding-left: 5rem;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.front-page__cover {
+		font-size: 3rem;
+	}
+}

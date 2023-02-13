@@ -1,0 +1,47 @@
+@import '../variables.scss';
+
+.toolbar {
+	background-color: $background-color-2;
+	position: fixed;
+	min-width: 15rem;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	border-right: 2px solid $neon-off;
+	font-size: 2rem;
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+	z-index: 10;
+	&__link {
+		color: $font-color-1;
+		text-decoration: none;
+	}
+	&:hover {
+		border-right: 2px solid $neon-light-1;
+		box-shadow: 0 0 4px $neon-light-1;
+	}
+}
+@media only screen and (max-width: 1200px) {
+	.toolbar {
+		min-width: 10rem;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.toolbar {
+		bottom: auto;
+		min-width: none;
+		border-right: none;
+		border-bottom: 2px solid $neon-off;
+		min-height: 5rem;
+		right: 0;
+		&:hover {
+			border-right: none;
+			border-bottom: 2px solid $neon-light-1;
+			box-shadow: 0 0 4px $neon-light-1;
+		}
+	}
+}

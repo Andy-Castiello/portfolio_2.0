@@ -1,11 +1,13 @@
-import './App.css';
+import Main from './Main/Main';
+import Toolbar from './Toolbar/Toolbar';
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Hello</h1>
-    </div>
-  );
+	return (
+		<div className="App">
+			<Toolbar />
+			<Main />
+		</div>
+	);
 }
 
 export default App;

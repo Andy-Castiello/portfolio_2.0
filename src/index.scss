@@ -1,0 +1,21 @@
+@font-face {
+	font-family: 'neon';
+	src: url('./assets/fonts/neon-future.regular.ttf');
+}
+@font-face {
+	font-family: 'Libre Franklin';
+	src: url('./assets/fonts/LibreFranklin-VariableFont_wght.ttf');
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	user-select: none;
+}
+html {
+	font-size: 62.5%;
+	font-family: 'Libre Franklin';
+}
