@@ -58,9 +58,17 @@
 		justify-self: end;
 		cursor: pointer;
 		&:hover{
-
+			
+			transition: .3s ease-out;
 			color:$neon-light-2;
 			text-shadow: 0 0 0.4em $neon-light-2;
+		}
+		&:active{
+
+			transition: none;
+			transform: translateY(2px);
+			text-shadow: none;
+			color: $neon-off;
 		}
 	}
 }

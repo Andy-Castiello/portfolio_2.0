@@ -8,16 +8,73 @@
 	left: 0;
 	bottom: 0;
 	border-right: 2px solid $neon-off;
-	font-size: 2rem;
-	display: flex;
-	flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+	font-size: 1.7rem;
+	gap: 2rem;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
 	z-index: 10;
+	&__home {
+		align-self: flex-start;
+		border-bottom: 1px solid $neon-off;
+		& > a {
+			display: block;
+			padding-top: 4rem;
+			padding-bottom: 4rem;
+			text-align: center;
+			font-size: 2.7em;
+			font-family: neon;
+			font-weight: 600;
+			color: $font-color-1;
+			text-decoration: none;
+
+			&:hover {
+				transition: 0.3s ease-out;
+				color: $neon-light-1;
+				text-shadow: 0 0 0.4em $neon-light-1;
+			}
+			&:active {
+				transition: none;
+				transform: translateY(2px);
+				text-shadow: none;
+				color: $neon-off;
+			}
+		}
+	}
+	&__nav {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 2rem;
+		align-items: center;
+		grid-area: 2/1/3/2;
+	}
+	&__social-networks {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+		align-self: flex-end;
+		border-top: 1px solid $neon-off;
+		font-size: 2em;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+	}
 	&__link {
+		font-family: neon;
+		font-weight: 600;
 		color: $font-color-1;
 		text-decoration: none;
+		&:hover {
+			transition: 0.3s ease-out;
+			color: $neon-light-2;
+			text-shadow: 0 0 0.4em $neon-light-2;
+		}
+		&:active {
+			transition: none;
+			transform: translateY(2px);
+			text-shadow: none;
+			color: $neon-off;
+		}
 	}
 	&:hover {
 		border-right: 2px solid $neon-light-1;
@@ -27,6 +84,7 @@
 @media only screen and (max-width: 1200px) {
 	.toolbar {
 		min-width: 10rem;
+		font-size: 1.2rem;
 	}
 }
 
@@ -38,6 +96,36 @@
 		border-bottom: 2px solid $neon-off;
 		min-height: 5rem;
 		right: 0;
+		display: grid;
+		grid-template-columns: auto 1fr auto;
+		grid-template-rows: auto;
+		&__home {
+			grid-area: 1/1/2/2;
+			border: none;
+			border-right: 1px solid $neon-off;
+			align-self: stretch;
+			display: flex;
+			align-items: center;
+			& > a {
+				padding: 0;
+				padding-left: 2rem;
+				padding-right: 2rem;
+			}
+		}
+		&__nav {
+			grid-area: 1/2/2/3;
+			flex-direction: row;
+		}
+		&__social-networks {
+			grid-area: 1/3/2/4;
+			flex-direction: row;
+			align-self: stretch;
+			padding: 0;
+			padding-left: 2rem;
+			padding-right: 2rem;
+			border: none;
+			border-left: 1px solid $neon-off;
+		}
 		&:hover {
 			border-right: none;
 			border-bottom: 2px solid $neon-light-1;
