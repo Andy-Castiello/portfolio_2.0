@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/portfolio_2.0/static/css/main.f7bce3de.css",
+    "main.js": "/portfolio_2.0/static/js/main.a7f04c6d.js",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/portfolio_2.0/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/codeImage.jpg": "/portfolio_2.0/static/media/codeImage.1dcef32bebb9ead39198.jpg",
+    "static/media/fontawesome-webfont.eot": "/portfolio_2.0/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/portfolio_2.0/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/LibreFranklin-VariableFont_wght.ttf": "/portfolio_2.0/static/media/LibreFranklin-VariableFont_wght.36548e4c1ed430cc7327.ttf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/portfolio_2.0/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/languagesImage.webp": "/portfolio_2.0/static/media/languagesImage.3dbd5a0b764939ef1359.webp",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/portfolio_2.0/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/neon-future.regular.ttf": "/portfolio_2.0/static/media/neon-future.regular.1a441dbbdaf9a0c6849e.ttf",
+    "index.html": "/portfolio_2.0/index.html",
+    "main.f7bce3de.css.map": "/portfolio_2.0/static/css/main.f7bce3de.css.map",
+    "main.a7f04c6d.js.map": "/portfolio_2.0/static/js/main.a7f04c6d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f7bce3de.css",
+    "static/js/main.a7f04c6d.js"
+  ]
+}
