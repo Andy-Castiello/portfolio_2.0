@@ -1,7 +1,7 @@
 @import '../../variables.scss';
 
 .contact {
-	background-color: $background-color-1;
+	/* background-color: $background-color-1;
 	background-color: $cube-background-1;
 	background-image: linear-gradient(
 			30deg,
@@ -52,7 +52,7 @@
 			$cube-background-3
 		);
 	background-size: 80px 140px;
-	background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+	background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px; */
 	display: grid;
 	grid-template-rows: 1fr auto 1fr;
 	min-height: 100vh;

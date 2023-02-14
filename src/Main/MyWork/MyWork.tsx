@@ -19,11 +19,13 @@ const backgroundImage = {
 };
 
 const MyWork = () => {
-	const worksList = require('../../assets/json/data.json')['works'];
+	const worksList = require('../../assets/data/json/data.json')['works'];
 	const workRef = useRef<HTMLDivElement>(null);
-	window.addEventListener('resize', ()=>resizeBackground(workRef,backgroundImage));
-	document.addEventListener('scroll',()=> scrollBackground(workRef));
-	useEffect(()=>resizeBackground(workRef,backgroundImage), []);
+	window.addEventListener('resize', () =>
+		resizeBackground(workRef, backgroundImage)
+	);
+	document.addEventListener('scroll', () => scrollBackground(workRef));
+	useEffect(() => resizeBackground(workRef, backgroundImage), []);
 	return (
 		<div
 			style={{ backgroundImage: `url(${languagesImage})` }}
@@ -40,7 +42,7 @@ const MyWork = () => {
 								<div
 									className="my-work__work__image"
 									style={{
-										backgroundImage: `url(${work.image})`,
+										backgroundImage: `url(${require(`../../assets/data/images/works/${work.image}`)})`,
 									}}
 								/>
 								<div className="my-work__work__info">

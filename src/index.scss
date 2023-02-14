@@ -17,6 +17,11 @@
 	box-sizing: border-box;
 	user-select: none;
 }
+:root{
+
+	--cursorX:50vw;
+	--cursorY:100rem;
+}
 html {
 	font-size: 62.5%;
 	font-family: 'Libre Franklin';

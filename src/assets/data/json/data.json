@@ -114,19 +114,19 @@
     "works": [
         {
             "title": "Dark Brewery",
-            "image": "./images/works/Cerveceria.jpeg",
+            "image": "Cerveceria.jpeg",
             "link": "https://andy-castiello.github.io/Cerveceria/",
             "description": "Dark Brewery es un sitio realizado como proyecto final para el curso de Desarrollo Web, en la academia de CODERHOUSE."
         },
         {
             "title": "Catalogo",
-            "image": "./images/works/Tienda-ropa.png",
+            "image": "Tienda-ropa.png",
             "link": "https://andy-castiello.github.io/Tienda-Ropa/",
             "description": "Al igual que Dark Brewery, este sitio fue el sitio que presente como proyecto final del curso de JavaScript también realizado en CODERHOUSE."
         },
         {
             "title": "Zod-Sec",
-            "image": "./images/works/Zod-sec.png",
+            "image": "Zod-sec.png",
             "link": "https://www.zod-sec.com/",
             "description": "Zod-Sec es un sitio sobre criptomonedas. Este es un trabajo freelance que realice con un compañero para un cliente, en este, me encargue de programar la parte del backend utilizando el framework Django."
         }

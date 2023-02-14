@@ -12,8 +12,8 @@ type Skill = {
 };
 
 const AboutMe = () => {
-	const certificates = require('../../assets/json/data.json')['certificates'];
-	const skills = require('../../assets/json/data.json')['skills'];
+	const certificates = require('../../assets/data/json/data.json')['certificates'];
+	const skills = require('../../assets/data/json/data.json')['skills'];
 	return (
 		<div className="about-me" id='about-me'>
 			<div className="about-me__container">
