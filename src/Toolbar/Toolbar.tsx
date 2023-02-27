@@ -1,19 +1,41 @@
+import { useAppDispatch, useAppSelector } from '../store/hooks';
+import { setMainDisplay } from '../store/slices/mainSlice/mainSlice';
 import './Toolbar.scss';
 
 const Toolbar = () => {
+	const mainDisplay = useAppSelector((state) => state.mainSlice.display);
+	const dispatch = useAppDispatch();
+
+	const handleNavClick = () => {
+		if (mainDisplay !== 'normal') dispatch(setMainDisplay('normal'));
+	};
 	return (
 		<div className="toolbar">
 			<div className="toolbar__home">
-				<a href="#front-page">A</a>
+				<a onClick={handleNavClick} href="#front-page">
+					A
+				</a>
 			</div>
 			<nav className="toolbar__nav">
-				<a className="toolbar__link" href="#about-me">
+				<a
+					onClick={handleNavClick}
+					className="toolbar__link"
+					href="#about-me"
+				>
 					About Me
 				</a>
-				<a className="toolbar__link" href="#my-work">
+				<a
+					onClick={handleNavClick}
+					className="toolbar__link"
+					href="#my-work"
+				>
 					My Work
 				</a>
-				<a className="toolbar__link" href="#contact">
+				<a
+					onClick={handleNavClick}
+					className="toolbar__link"
+					href="#contact"
+				>
 					Contact
 				</a>
 			</nav>

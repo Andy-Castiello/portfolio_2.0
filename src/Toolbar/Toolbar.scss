@@ -67,7 +67,7 @@
 		&:hover {
 			transition: 0.3s ease-out;
 			color: $neon-light-2;
-			text-shadow: 0 0 0.4em $neon-light-2;
+			text-shadow: 0 0 0.4em rgba($neon-light-2, 0.4);
 		}
 		&:active {
 			transition: none;

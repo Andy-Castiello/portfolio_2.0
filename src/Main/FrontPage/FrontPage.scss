@@ -1,4 +1,5 @@
 @import '../../variables.scss';
+@import '../../animations.scss';
 
 .front-page {
 	background-attachment: fixed;
@@ -20,12 +21,14 @@
 		color: $neon-light-1;
 		font-weight: 500;
 		text-shadow: 0 0 0.2em $neon-light-1, 0 0 0.2em $neon-light-1;
+		animation: $neon-on-animation;
 	}
 	&__span {
 		color: $neon-light-2;
 		font-weight: 300;
 		font-size: 0.7em;
 		text-shadow: 0 0 0.17em $neon-light-2, 0 0 0.17em $neon-light-2;
+		animation: $neon-on-animation;
 	}
 }
 @media only screen and (max-width: 1200px) {

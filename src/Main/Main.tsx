@@ -4,11 +4,15 @@ import FrontPage from './FrontPage/FrontPage';
 import MyWork from './MyWork/MyWork';
 import { useRef } from 'react';
 import './Main.scss';
+import { useAppSelector } from '../store/hooks';
 
 const backgroundImage = require('../assets/images/hexagon.png');
 
 const Main = () => {
 	const mainRef = useRef<HTMLDivElement>(null);
+
+	const mainDisplay = useAppSelector((state) => state.mainSlice.display);
+
 	document.addEventListener('mousemove', (event) => {
 		if (mainRef.current) {
 			document.documentElement.style.setProperty(
@@ -29,9 +33,13 @@ const Main = () => {
 			className="main"
 			ref={mainRef}
 		>
-			<FrontPage />
-			<AboutMe />
-			<MyWork />
+			{mainDisplay === 'normal' ? (
+				<>
+					<FrontPage />
+					<AboutMe />
+					<MyWork />
+				</>
+			) : undefined}
 			<Contact />
 		</div>
 	);
