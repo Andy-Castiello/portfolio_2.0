@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio_2.0/static/css/main.d2201cb0.css",
-    "main.js": "/portfolio_2.0/static/js/main.dd61adc2.js",
+    "main.js": "/portfolio_2.0/static/js/main.f2a1fa11.js",
     "static/media/hexagon.png": "/portfolio_2.0/static/media/hexagon.606779b8af24caf3a698.png",
     "static/media/Tienda-ropa.png": "/portfolio_2.0/static/media/Tienda-ropa.ee88b885eee3d3c437a5.png",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/portfolio_2.0/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
@@ -18,10 +18,10 @@
     "static/media/neon-future.regular.ttf": "/portfolio_2.0/static/media/neon-future.regular.1a441dbbdaf9a0c6849e.ttf",
     "index.html": "/portfolio_2.0/index.html",
     "main.d2201cb0.css.map": "/portfolio_2.0/static/css/main.d2201cb0.css.map",
-    "main.dd61adc2.js.map": "/portfolio_2.0/static/js/main.dd61adc2.js.map"
+    "main.f2a1fa11.js.map": "/portfolio_2.0/static/js/main.f2a1fa11.js.map"
   },
   "entrypoints": [
     "static/css/main.d2201cb0.css",
-    "static/js/main.dd61adc2.js"
+    "static/js/main.f2a1fa11.js"
   ]
 }
