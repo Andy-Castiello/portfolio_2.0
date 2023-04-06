@@ -27,3 +27,10 @@ html {
 	font-family: 'Libre Franklin';
 	scroll-behavior: smooth;
 }
+@media only screen and (max-width:480px) {
+	
+	html{
+
+		scroll-behavior: auto;
+	}
+}

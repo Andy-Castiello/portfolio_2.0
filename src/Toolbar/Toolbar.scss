@@ -1,18 +1,27 @@
 @import '../variables.scss';
 
+$animation-speed: 3;
+
 .toolbar {
-	background-color: $background-color-2;
 	position: fixed;
-	min-width: 15rem;
 	top: 0;
 	left: 0;
 	bottom: 0;
-	border-right: 2px solid $neon-off;
-	font-size: 1.7rem;
-	gap: 2rem;
-	display: grid;
-	grid-template-rows: auto 1fr auto;
-	z-index: 10;
+	z-index: 1;
+	&__container {
+		background-color: $background-color-2;
+		min-width: 15rem;
+		height: 100%;
+		border-right: 2px solid $neon-off;
+		font-size: 1.7rem;
+		gap: 2rem;
+		display: grid;
+		grid-template-rows: auto 1fr auto;
+		&:hover {
+			border-right: 2px solid $neon-light-1;
+			box-shadow: 0 0 4px $neon-light-1;
+		}
+	}
 	&__home {
 		align-self: flex-start;
 		border-bottom: 1px solid $neon-off;
@@ -76,13 +85,31 @@
 			color: $neon-off;
 		}
 	}
-	&:hover {
-		border-right: 2px solid $neon-light-1;
-		box-shadow: 0 0 4px $neon-light-1;
+
+	&__mobile-navigator {
+		padding: 2rem;
+		display: flex;
+		flex-direction: column;
+		gap: 1.2rem;
+		z-index: 1;
+		cursor: pointer;
+		&__bar {
+			min-height: 0.2rem;
+			min-width: 3rem;
+			background-color: $font-color-1;
+		}
+		&:hover {
+			transition: 0.3s;
+		}
+		&:hover > &__bar {
+			transition-duration: 0.3s;
+			background-color: $neon-light-2;
+			box-shadow: 0 0 2em 0.1em $neon-light-2;
+		}
 	}
 }
 @media only screen and (max-width: 1200px) {
-	.toolbar {
+	.toolbar__container {
 		min-width: 10rem;
 		font-size: 1.2rem;
 	}
@@ -91,14 +118,21 @@
 @media only screen and (max-width: 768px) {
 	.toolbar {
 		bottom: auto;
-		min-width: none;
-		border-right: none;
-		border-bottom: 2px solid $neon-off;
-		min-height: 5rem;
 		right: 0;
-		display: grid;
-		grid-template-columns: auto 1fr auto;
-		grid-template-rows: auto;
+		&__container {
+			min-width: none;
+			border-right: none;
+			border-bottom: 2px solid $neon-off;
+			min-height: 5rem;
+			display: grid;
+			grid-template-columns: auto 1fr auto;
+			grid-template-rows: auto;
+			&:hover {
+				border-right: none;
+				border-bottom: 2px solid $neon-light-1;
+				box-shadow: 0 0 4px $neon-light-1;
+			}
+		}
 		&__home {
 			grid-area: 1/1/2/2;
 			border: none;
@@ -126,10 +160,77 @@
 			border: none;
 			border-left: 1px solid $neon-off;
 		}
-		&:hover {
-			border-right: none;
-			border-bottom: 2px solid $neon-light-1;
-			box-shadow: 0 0 4px $neon-light-1;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.toolbar {
+		right: auto;
+		&__container {
+			display: flex;
+			flex-direction: column;
+			padding: 3rem;
+			border-top: 0.2rem solid $font-color-1;
+			border-bottom: 0.2rem solid $font-color-1;
+			&:hover {
+				border-bottom: 0.2rem solid $font-color-1;
+				box-shadow: none;
+			}
+			&--expanding {
+				height: 100vh;
+				animation: toolbar-expansion 3s ease-in-out;
+			}
 		}
+		&__mobile-navigator {
+			&--expanding {
+				border-top: 0.2rem solid $font-color-1;
+				border-bottom: 0.2rem solid $font-color-1;
+				animation: toolbar-expansion 1s ease-in-out forwards;
+				position: relative;
+			}
+			&__bar--expanding {
+				position: absolute;
+				left:0;
+				right: 0;
+				top:1.4rem;
+				height: 0.2rem;
+				background-color: $font-color-1;
+			}
+		}
+	}
+}
+
+@keyframes toolbar-expansion {
+	0% {
+		margin: 2rem;
+		width: 3rem;
+		height: 3rem;
+	}
+	30% {
+		margin: 2rem;
+		width: 3rem;
+		height: 3rem;
+		transform: rotate(180deg);
+		background-color: transparent;
+	}
+	60% {
+		width: 100vw;
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(180deg);
+		margin: 0;
+		height: 100vh;
+		width: 100vw;
+		background-color: $background-color-2;
+	}
+}
+@keyframes toolbar__bar-rotate {
+	
+	100% {
+		transform: rotate(180deg);
+		margin: 0;
+		height: 100vh;
+		width: 100vw;
+		background-color: $background-color-2;
 	}
 }

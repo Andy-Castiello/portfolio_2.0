@@ -9,61 +9,13 @@
         {
             "title": "JavaScript",
             "institution": "CoderHouse",
-            "date": "Dic 2021 - Feb 2022",
+            "date": "Dec 2021 - Feb 2022",
             "link": "https://www.coderhouse.com/certificados/622c19bdf0727901f418dfcd"
         },
         {
             "title": "Responsive Web Design",
             "institution": "FreeCodeCamp",
-            "date": "Ene 2021",
-            "link": "https://www.freecodecamp.org/certification/andy-96/responsive-web-design"
-        },
-        {
-            "title": "JavaScript Algorithms and Data Structures",
-            "institution": "FreeCodeCamp",
-            "date": "Feb 2021",
-            "link": "https://www.freecodecamp.org/certification/andy-96/javascript-algorithms-and-data-structures"
-        },
-        {
-            "title": "Desarrollo Web",
-            "institution": "CoderHouse",
-            "date": "Ago 2021 - Oct 2021",
-            "link": "https://www.coderhouse.com/certificados/618c72fc697651002edbbb5d"
-        },
-        {
-            "title": "JavaScript",
-            "institution": "CoderHouse",
-            "date": "Dic 2021 - Feb 2022",
-            "link": "https://www.coderhouse.com/certificados/622c19bdf0727901f418dfcd"
-        },
-        {
-            "title": "Responsive Web Design",
-            "institution": "FreeCodeCamp",
-            "date": "Ene 2021",
-            "link": "https://www.freecodecamp.org/certification/andy-96/responsive-web-design"
-        },
-        {
-            "title": "JavaScript Algorithms and Data Structures",
-            "institution": "FreeCodeCamp",
-            "date": "Feb 2021",
-            "link": "https://www.freecodecamp.org/certification/andy-96/javascript-algorithms-and-data-structures"
-        },
-        {
-            "title": "Desarrollo Web",
-            "institution": "CoderHouse",
-            "date": "Ago 2021 - Oct 2021",
-            "link": "https://www.coderhouse.com/certificados/618c72fc697651002edbbb5d"
-        },
-        {
-            "title": "JavaScript",
-            "institution": "CoderHouse",
-            "date": "Dic 2021 - Feb 2022",
-            "link": "https://www.coderhouse.com/certificados/622c19bdf0727901f418dfcd"
-        },
-        {
-            "title": "Responsive Web Design",
-            "institution": "FreeCodeCamp",
-            "date": "Ene 2021",
+            "date": "Jan 2021",
             "link": "https://www.freecodecamp.org/certification/andy-96/responsive-web-design"
         },
         {
@@ -87,7 +39,15 @@
             "level": 80
         },
         {
+            "title": "TypeScript",
+            "level": 80
+        },
+        {
             "title": "React",
+            "level": 70
+        },
+        {
+            "title": "Redux Toolkit",
             "level": 70
         },
         {
@@ -95,40 +55,29 @@
             "level": 60
         },
         {
-            "title": "Java",
-            "level": 50
-        },
-        {
             "title": "Django",
             "level": 60
-        },
-        {
-            "title": "Visual Basic",
-            "level": 30
-        },
-        {
-            "title": "Terminal Linux",
-            "level": 40
         }
     ],
     "works": [
         {
             "title": "Dark Brewery",
             "image": "Cerveceria.jpeg",
-            "link": "https://andy-castiello.github.io/Cerveceria/",
+            "link": "https://github.com/Andy-Castiello/Cerveceria",
             "description": "Dark Brewery es un sitio realizado como proyecto final para el curso de Desarrollo Web, en la academia de CODERHOUSE."
         },
         {
             "title": "Catalogo",
             "image": "Tienda-ropa.png",
-            "link": "https://andy-castiello.github.io/Tienda-Ropa/",
+            "link": "https://github.com/Andy-Castiello/Tienda-Ropa",
             "description": "Al igual que Dark Brewery, este sitio fue el sitio que presente como proyecto final del curso de JavaScript también realizado en CODERHOUSE."
         },
         {
-            "title": "Zod-Sec",
-            "image": "Zod-sec.png",
-            "link": "https://www.zod-sec.com/",
-            "description": "Zod-Sec es un sitio sobre criptomonedas. Este es un trabajo freelance que realice con un compañero para un cliente, en este, me encargue de programar la parte del backend utilizando el framework Django."
+            "title": "Password Manager",
+            "image": "PasswordManager.png",
+            "link": "https://github.com/Andy-Castiello/password_manager/",
+            "description": "This is a personal project, it's an application designed to create, edit and manage your passwords in an easy way."
         }
+        
     ]
 }

@@ -24,8 +24,10 @@ const MyWork = () => {
 	window.addEventListener('resize', () =>
 		resizeBackground(workRef, backgroundImage)
 	);
-	document.addEventListener('scroll', () => scrollBackground(workRef));
-	useEffect(() => resizeBackground(workRef, backgroundImage), []);
+	useEffect(() => {
+		document.addEventListener('scroll', () => scrollBackground(workRef));
+		resizeBackground(workRef, backgroundImage);
+	}, []);
 	return (
 		<div
 			style={{ backgroundImage: `url(${languagesImage})` }}
@@ -37,8 +39,13 @@ const MyWork = () => {
 				<div className="my-work__container">
 					<h2 className="my-work__h2">My Work</h2>
 					<div className="my-work__works">
-						{worksList.map((work: work) => (
-							<div className="my-work__work">
+						{worksList.map((work: work, i: number) => (
+							<a
+								href={work.link}
+								target="_blank"
+								key={i}
+								className="my-work__work"
+							>
 								<div
 									className="my-work__work__image"
 									style={{
@@ -49,7 +56,7 @@ const MyWork = () => {
 									<span>{work.title}</span>
 									<p>{work.description}</p>
 								</div>
-							</div>
+							</a>
 						))}
 					</div>
 				</div>

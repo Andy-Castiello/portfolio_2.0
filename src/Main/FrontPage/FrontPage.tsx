@@ -13,8 +13,10 @@ const backgroundImage = {
 const FrontPage = () => {
 	const frontRef = useRef<HTMLDivElement>(null);
 	window.addEventListener('resize', ()=>resizeBackground(frontRef,backgroundImage));
-	document.addEventListener('scroll',()=> scrollBackground(frontRef));
-	useEffect(()=>resizeBackground(frontRef,backgroundImage), []);
+	useEffect(()=>{
+		document.addEventListener('scroll',()=> scrollBackground(frontRef));
+		resizeBackground(frontRef,backgroundImage)
+	}, []);
 	return (
 		<div
 			style={{ backgroundImage: `url(${backgroundImage.url})` }}

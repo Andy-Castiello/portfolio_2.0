@@ -1,23 +1,28 @@
+import Certificate from './Certificate/Certificate';
+import pxToRem from '../../assets/functions/pxToRem';
 import './AboutMe.scss';
 
-type Certificate = {
+type CertificateType = {
 	title: string;
 	institution: string;
 	date: string;
 	link: string;
 };
-type Skill = {
+type SkillType = {
 	title: string;
 	level: number;
 };
 
 const AboutMe = () => {
-	const certificates = require('../../assets/data/json/data.json')['certificates'];
+	const certificates = require('../../assets/data/json/data.json')[
+		'certificates'
+	];
 	const skills = require('../../assets/data/json/data.json')['skills'];
+
 	return (
-		<div className="about-me" id='about-me'>
+		<div className="about-me" id="about-me">
 			<div className="about-me__container">
-			<h2 className="about-me__h2">About Me</h2>
+				<h2 className="about-me__h2">About Me</h2>
 				<p className="about-me__p">
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit.
 					Tempora, veniam nobis. Consequatur provident ipsa non
@@ -26,8 +31,8 @@ const AboutMe = () => {
 					consectetur!
 				</p>
 				<div className="about-me__skills">
-					{skills.map((skill: Skill) => (
-						<div className="about-me__skill">
+					{skills.map((skill: SkillType,i:number) => (
+						<div key={i} className="about-me__skill">
 							<span>{skill.title}</span>
 							<div className="about-me__skill__bar">
 								<div
@@ -39,8 +44,8 @@ const AboutMe = () => {
 					))}
 				</div>
 				<div className="about-me__certificates">
-					{certificates.map((certificate: Certificate) => (
-						<div className="about-me__certificate">
+					{certificates.map((certificate: CertificateType,i:number) => (
+						<a href={certificate.link} target='_blank' key={i} className="about-me__certificate">
 							<h4 className="about-me__certificate__title">
 								{certificate.title}
 							</h4>
@@ -50,8 +55,14 @@ const AboutMe = () => {
 							<span className="about-me__certificate__date">
 								{certificate.date}
 							</span>
-						</div>
+						</a>
 					))}
+					{/* <Certificate
+						title={certificate.title}
+						institution={certificate.institution}
+						date={certificate.date}
+						initialPosition={i}
+					/> */}
 				</div>
 			</div>
 		</div>
